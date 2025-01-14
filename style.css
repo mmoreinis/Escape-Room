@@ -1,0 +1,51 @@
+body,html {
+    margin: 0;
+    height: 100%;
+}
+h2{
+    text-align: center;
+}
+#elevator {
+    width:100%;
+    display: flex;
+    position: relative;  
+}
+
+ #controls {
+    height:100%!important;
+    background:gainsboro;
+    width:15%;
+}
+
+#escape-room {
+    float:left;
+}
+
+#escape-room {
+    display:block;
+    width:85%;
+}
+
+#controls {
+    float:right;
+}
+
+#choose-floor {
+    margin:200px 40px;
+    width:100px;
+    height:450px;
+    border:10px groove gray;
+}
+
+#choose-floor button {
+    border-radius:50%;
+    background-color:white;
+    width:40px;
+    padding:10px;
+    display:block;
+    margin:auto;
+}
+
+#choose-floor button:hover {
+    background-color:yellow;
+}
