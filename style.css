@@ -5,45 +5,50 @@ body,html {
 h2{
     text-align: center;
 }
+
 #elevator {
     width:100%;
     display: flex;
     position: relative;  
 }
 
- #controls {
-    height:100%!important;
-    background:gainsboro;
-    width:15%;
-}
-
 #escape-room {
     float:left;
-}
-
-#escape-room {
+    display:block;
+    width:85%;
+    float:left;
     display:block;
     width:85%;
 }
 
-#controls {
+#escape-room img {
+    width:100%;
+}
+
+ #controls {
+    height:100%!important;
+    background:gainsboro;
+    width:15%;
     float:right;
 }
 
+
 #choose-floor {
-    margin:200px 40px;
-    width:100px;
-    height:450px;
+    margin:100px auto;
+    width:50%;
+    padding: 40px 0;
     border:10px groove gray;
 }
 
 #choose-floor button {
     border-radius:50%;
     background-color:white;
-    width:40px;
-    padding:10px;
+    width:50px;
+    height:50px;
+    padding:5px;
+    font-size:1em;
     display:block;
-    margin:auto;
+    margin:5px auto;
 }
 
 #choose-floor button:hover {

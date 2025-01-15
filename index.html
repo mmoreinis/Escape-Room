@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body> 
-    <div id = "floor" >
-      <h2> first floor 
-
-      </h2>
+    <div id="floor" >
+      <h2>first floor</h2>
     </div>
     <div id="elevator">
-  
-      <img id = "escape-room" src="escape room.png" usemap="#image-map">
+      <div id="escape-room">
+        <img id="floorBox" src="elevator.png" usemap="#ground-map">
+      </div>
       <div id="controls">
-        <div id = "choose-floor">
+        <div id="choose-floor">
           <button onClick="groundFloor()">G</button>
           <button onClick="firstFloor()">1</button>
           <button onClick="secondFloor()">2</button>
@@ -28,9 +27,12 @@
         </div>
       </div>
     </div>
-
-    <map name="image-map">
-        <area target="" alt="" title="" href="" coords="1872,1008,21,0" shape="rect">
+  <!-- Image Maps-->
+    <map name="ground-map">
+      <area target="" alt="" title="" href="" coords="" shape="rect">
+  </map>
+    <map name="first-map">
+      <area target="" alt="" title="" href="" coords="" shape="rect">
     </map>
   <script src="script.js"></script>
 </body>

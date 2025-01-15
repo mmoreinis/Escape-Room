@@ -6,7 +6,14 @@ function elevator(floor){
 }  
 
 function firstFloor(){
-   alert("First Floor");
+  let thisFloor = document.getElementById("floorBox");
+  thisFloor.src = "janitorsCloset.png";
+  thisFloor.addEventListener("click", firstMap);
+  firstMap();
+}
+function firstMap(){
+   this.setAttribute("usemap", "first-map");
+   let current= document.getElementById("firstFloor");
     //show background
     //run function
 }
