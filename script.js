@@ -19,7 +19,7 @@ function firstMap(){
 }
 
 function secondFloor(){
-  alert("Second Floor");
+  
 }
 function thirdFloor(){
   alert("Third Floor");
@@ -38,7 +38,11 @@ function seventhFloor(){
   alert(" Seventh Floor");
 }
 function eighthFloor(){
-  alert(" Eighth Floor");
+  let thisFloor = document.getElemenyById("floorBox");
+  thisFloor.src = "science.gif";
+  thisFloor.addEventListener("click", eighthMap);
+  eighthMap();
+
 }
 function groundFloor(){
     alert("Goodbye");
