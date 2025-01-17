@@ -9,7 +9,6 @@ h2{
 #elevator {
     width:100%;
     display: flex;
-    position: relative;  
 }
 
 #escape-room {
@@ -58,8 +57,16 @@ h2{
     z-index:100;
     left:0;
     top:0;
+    display:none;
 }
 
 #popup img {
     z-index:1000;
+}
+
+iframe {
+    width:500px;
+    height:500px;
+    margin-left:400px;
+    border:none!important;
 }
