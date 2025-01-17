@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>prototype</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class = "puzzleSquare"></div>
+    <div class = "one" id="1" style="background-image:url(kirby.jpg);"></div>
+    <div class = "two" id="2" style="background-position: top center; background-image:url(kirby.jpg);"></div>
+    <div class = "three" id="3" style="background-position: top right; background-image:url(kirby.jpg);"></div>
+    <div class = "four" id="4" style="background-position: center left; background-image:url(kirby.jpg);"></div>
+    <div class = "five" id="5" style="background-position: center center; background-image:url(kirby.jpg);"></div>
+    <div class = "six" id="6" style="background-position: center right; background-image:url(kirby.jpg);"></div>
+    <div class = "seven" id="7" style="background-position: bottom left; background-image:url(kirby.jpg);"></div>
+    <div class = "eight" id="8" style="background-position: bottom center; background-image:url(kirby.jpg);"></div>
+    <div class = "empty" id="empty" style="background-color: black;"></div>
+  </body>
+</html>

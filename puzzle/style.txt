@@ -1,0 +1,89 @@
+div.puzzleSquare {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    margin-top: 100;
+}
+
+div.one{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 00px;
+    margin-top: 100px;
+}
+
+div.two{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+div.three{
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+div.four{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 0px;
+    margin-top: 200px;
+}
+
+div.five{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+div.six{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+div.seven{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 00px;
+    margin-top: 300px;
+}
+
+div.eight{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 100px;
+    margin-top: 300px;
+}
+
+div.empty{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 200px;
+    margin-top: 300px;
+}
