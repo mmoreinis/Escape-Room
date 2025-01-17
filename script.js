@@ -9,17 +9,18 @@ function elevator(floor){
 /* General function for popups at each floor. */
 function loadPopUp(image, game){
   let popup = document.getElementById("popup");
-  // popup.removeChild("pop-image");
-  popup.style.display="block";
+  popup.innerHTML="";
   let popimg = document.createElement("img");
   popimg.addEventListener("click",game);
   popimg.id ="pop-image";
   popimg.src=image;
   popup.appendChild(popimg);
+  popup.style.display="block";
 }
 
 /* Put all per-floor functions inside the parent */
 function firstFloor(){
+  document.getElementById("floorBox").src = "elevator.png";
   loadPopUp("janitorsCloset.png", firstMap);
   // firstMap();
 
@@ -61,6 +62,7 @@ function secondFloor(){
 function thirdFloor(){
   alert("Third Floor");
 }
+
 function fourthFloor(){
   alert("Fourth Floor");
 
@@ -78,5 +80,8 @@ function eighthFloor(){
 
 }
 function groundFloor(){
-    alert("Goodbye");
+  document.getElementById("popup").innerHTML="";
+  document.getElementById("floorBox").src = "elevator.png";
+  alert("Goodbye");
+
 }
