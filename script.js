@@ -19,7 +19,24 @@ function firstMap(){
 }
 
 function secondFloor(){
-  
+  let popup = document.getElementById("popup");
+  let popimg = document.createElement("img");
+  popup.addEventListener("click",loadPuzzle);
+  popimg.src="popup.png";
+  popup.appendChild(popimg);
+  let thisFloor = document.getElementById("floorBox");
+  thisFloor.src = "science.gif";
+  thisFloor.addEventListener("click", secondMap);
+  secondMap();
+  function loadPuzzle(){
+    const iframe = document.createElement("iframe");
+    iframe.src = "puzzle-index.html";
+    popup.appendChild(iframe);
+  }
+}
+function secondMap(){
+this.setattribute("use","second-Map")
+let current= document.getElementById("secondFloor");
 }
 function thirdFloor(){
   alert("Third Floor");
@@ -38,10 +55,6 @@ function seventhFloor(){
   alert(" Seventh Floor");
 }
 function eighthFloor(){
-  let thisFloor = document.getElemenyById("floorBox");
-  thisFloor.src = "science.gif";
-  thisFloor.addEventListener("click", eighthMap);
-  eighthMap();
 
 }
 function groundFloor(){
