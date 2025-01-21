@@ -41,6 +41,7 @@ window.onload = function scramble(){
         }
     }
     check2();
+    checkWin();
 }
 
 function move1(){
@@ -50,6 +51,7 @@ function move1(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function move2(){
@@ -59,6 +61,7 @@ function move2(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function move3(){
@@ -68,6 +71,7 @@ function move3(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function move4(){
@@ -77,6 +81,7 @@ function move4(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function move5(){
@@ -86,6 +91,7 @@ function move5(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function move6(){
@@ -95,6 +101,7 @@ function move6(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function move7(){
@@ -104,6 +111,7 @@ function move7(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function move8(){
@@ -113,6 +121,7 @@ function move8(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function move9(){
@@ -122,6 +131,7 @@ function move9(){
     empty.className = (array[0]);
     currentBox[0].className = (array[1]);
     check2();
+    checkWin();
 }
 
 function check2(){
@@ -155,4 +165,23 @@ function check2(){
         case "eight":seven[0].onclick = move7; five[0].onclick = move5; nine[0].onclick = move9; break;
         case "empty":eight[0].onclick = move8; six[0].onclick = move6; break;
     }
+}
+function checkWin(){
+    let positions = [];
+    let correct = ["one","two","three","four", "five", "six", "seven", "eight"];
+    for (let i = 1; i < 9; i++) {
+        let square = document.getElementById(i);
+        //alert(square.className);
+        positions.push(square.className);
+    }
+    if (document.getElementById("empty").className == "empty"){
+        if (positions.toString() === correct.toString()){
+            window.top.postMessage('complete', '*');
+        }
+        //alert(positions.toString());
+        }
+    else{
+        //alert("incomplete");
+}
+
 }

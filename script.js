@@ -47,8 +47,15 @@ function secondFloor(){
     let popimg = document.getElementById("pop-image");
     popup.removeChild(popimg);
     const iframe = document.createElement("iframe");
+    iframe.id ="puzzle";
     iframe.src = "puzzle/index.html";
     popup.appendChild(iframe);
+    window.onmessage = function(e) {
+      if (e.data == 'complete') {
+        document.getElementById("puzzle").remove();
+          alert('It works!');
+      }
+  };
   }
 
   function secondMap(){
@@ -77,7 +84,7 @@ function seventhFloor(){
   alert(" Seventh Floor");
 }
 function eighthFloor(){
-
+alert("eighth floor");
 }
 function groundFloor(){
   document.getElementById("popup").innerHTML="";
